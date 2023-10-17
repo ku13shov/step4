@@ -1,0 +1,604 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width">
+    <title>Оформление заказа</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="content-box step4">
+        <div class="fixed-container">
+            <header class="header">
+                <div class="container">
+                    <div class="header__wrapper">
+                        <div class="header__left">
+                            <input type="image" onclick="window.document.location='constructorback'"
+                                src="images/Back.svg" />
+
+                            <span class="header__title">
+                                Оформление заказа
+                            </span>
+                        </div>
+
+                        <div class="header__right">
+                            <div class="header__phone">
+                                <div class="header__phone-img">
+                                    <img src="images/a1.png" alt="a1">
+                                </div>
+
+                                <a href="tel:+375293182000" class="header__phone-link">(29) 318 20 00</a>
+                            </div>
+
+                            <div class="header__cart step4">
+                                <button class="header__cart-btn">
+                                    <svg width="45" height="45" viewBox="0 0 45 45" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M33.356 17.0938L33.2565 17.4173L30.6186 25.993L30.6186 25.9933C30.5732 26.1403 30.4818 26.2688 30.358 26.36C30.2341 26.4512 30.0842 26.5003 29.9304 26.5M33.356 17.0938L29.9309 26.25M33.356 17.0938H33.0176H15.491H15.1596L15.2506 17.4124L17.6987 25.9788L17.6987 25.9789C17.7417 26.1292 17.8325 26.2613 17.9573 26.3554C18.0821 26.4494 18.2342 26.5002 18.3905 26.5M33.356 17.0938L18.3902 26.25M29.9304 26.5L29.9309 26.25M29.9304 26.5H29.9309V26.25M29.9304 26.5H18.3905M29.9309 26.25H18.3902M18.3905 26.5L18.3902 26.25M18.3905 26.5H18.3902V26.25M33.0176 17.3438L32.9407 17.5938H33.0176V17.3438ZM33.0176 17.3438L32.7786 17.2702L32.756 17.3438H33.0176ZM15.491 17.3438L15.7314 17.2751L15.751 17.3438H15.491ZM15.491 17.3438V17.5938H15.5625L15.491 17.3438ZM36.0271 16.2776L36.0271 16.2777L32.829 26.6722L32.8288 26.673C32.6402 27.2938 32.2565 27.8372 31.7346 28.2226C31.2128 28.608 30.5805 28.8149 29.9318 28.8125H29.9309L18.391 28.8125C18.3909 28.8125 18.3907 28.8125 18.3905 28.8125C17.7321 28.8102 17.0922 28.5948 16.5665 28.1983C16.0408 27.8018 15.6577 27.2457 15.4746 26.6132C15.4746 26.6131 15.4745 26.613 15.4745 26.6129L11.4681 12.5876L11.4163 12.4062H11.2277H10.0781C9.77147 12.4062 9.47737 12.2844 9.26053 12.0676C9.04369 11.8508 8.92188 11.5567 8.92188 11.25C8.92188 10.9433 9.04369 10.6492 9.26053 10.4324C9.47737 10.2156 9.77147 10.0938 10.0781 10.0938H11.5801C12.0349 10.0952 12.4769 10.2441 12.84 10.518C13.203 10.792 13.4675 11.1762 13.5937 11.6132C13.5937 11.6133 13.5938 11.6134 13.5938 11.6135L14.4479 14.6L14.4998 14.7812H14.6883H34.9219C35.1028 14.7812 35.2813 14.8237 35.4428 14.9052C35.6044 14.9867 35.7446 15.105 35.8521 15.2506C35.9596 15.3961 36.0314 15.5649 36.0618 15.7433C36.0922 15.9217 36.0803 16.1047 36.0271 16.2776ZM20.1406 32.8125C20.1406 33.2266 20.0178 33.6314 19.7878 33.9757C19.5577 34.32 19.2307 34.5884 18.8481 34.7469C18.4655 34.9053 18.0446 34.9468 17.6384 34.866C17.2323 34.7852 16.8592 34.5858 16.5664 34.293C16.2736 34.0002 16.0741 33.6271 15.9934 33.221C15.9126 32.8148 15.954 32.3938 16.1125 32.0113C16.271 31.6287 16.5393 31.3017 16.8836 31.0716C17.228 30.8415 17.6328 30.7188 18.0469 30.7188C18.6022 30.7188 19.1347 30.9393 19.5274 31.332C19.92 31.7246 20.1406 32.2572 20.1406 32.8125ZM29.0711 31.0716C29.4155 30.8415 29.8203 30.7188 30.2344 30.7188C30.7897 30.7188 31.3222 30.9393 31.7149 31.332C32.1075 31.7246 32.3281 32.2572 32.3281 32.8125C32.3281 33.2266 32.2053 33.6314 31.9753 33.9757C31.7452 34.32 31.4182 34.5884 31.0356 34.7469C30.653 34.9053 30.2321 34.9468 29.8259 34.866C29.4198 34.7852 29.0467 34.5858 28.7539 34.293C28.4611 34.0002 28.2616 33.6271 28.1809 33.221C28.1001 32.8148 28.1415 32.3938 28.3 32.0113C28.4585 31.6287 28.7268 31.3017 29.0711 31.0716Z"
+                                            fill="#5A7794" stroke="white" stroke-width="0.5" />
+                                        <rect x="0.5" y="0.5" width="44" height="44" rx="4.5" stroke="#5A7794" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+            </header>
+
+            <section class="steps">
+                <div class="container">
+                    <div class="steps__wrapper">
+                        <div class="steps__box">
+                            <div class="steps__box-num active num1">1 <span class="first">Данные заказчика</span></div>
+                            <div class="steps__box-line"></div>
+                            <div class="steps__box-num num2">2 <span>Доставка</span></div>
+                            <div class="steps__box-line"></div>
+                            <div class="steps__box-num num3">3 <span>Оплата</span></div>
+                            <div class="steps__box-line"></div>
+                            <div class="steps__box-num num4">4 <span class="last">Проверка заказа</span></div>
+                        </div>
+                    </div>
+
+                    <div class="steps__images">
+                        <div class="steps__images-img">
+                            <img src="images/main-image.jpg" alt="">
+                        </div>
+                        <div class="steps__images-img stella">
+                            <img src="images/stella-step3.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="order-details">
+                <div class="container">
+                    <div class="order-details__item active step1">
+                        <div class="order-details__item-title">
+                            1.Заполните данные получателя заказа:
+                        </div>
+
+                        <div class="order-details__item-bluetext">
+                            Ваши данные нужны для выписки <span>акта приема-передачи товара и гарантийного талона</span> 
+                        </div>
+
+                        <div class="order-details__item-box">
+                            <div class="order-details__item-col">
+                                <div class="order-details__item-label">
+                                    Имя
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9"
+                                        fill="none">
+                                        <g clip-path="url(#clip0_335_2368)">
+                                            <path
+                                                d="M4.725 4.5L7.05 7.65L6.15 8.25L4.0875 4.9875L2.025 8.25L1.1625 7.65L3.4875 4.5L0 3.6L0.3375 2.625L3.75 3.825L3.525 0H4.65L4.4625 3.825L7.8375 2.625L8.1375 3.6375L4.725 4.5Z"
+                                                fill="#E60D0D" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_335_2368">
+                                                <rect width="9" height="9" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div>
+                                <input type="text" class="order-details__item-input required" placeholder="Ваше имя">
+
+                                <div class="order-details__item-label">
+                                    Отчество
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9"
+                                        fill="none">
+                                        <g clip-path="url(#clip0_335_2368)">
+                                            <path
+                                                d="M4.725 4.5L7.05 7.65L6.15 8.25L4.0875 4.9875L2.025 8.25L1.1625 7.65L3.4875 4.5L0 3.6L0.3375 2.625L3.75 3.825L3.525 0H4.65L4.4625 3.825L7.8375 2.625L8.1375 3.6375L4.725 4.5Z"
+                                                fill="#E60D0D" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_335_2368">
+                                                <rect width="9" height="9" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div>
+                                <input type="text" class="order-details__item-input required"
+                                    placeholder="Ваше отчество">
+
+                                <div class="order-details__item-label">
+                                    Населенный пункт
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9"
+                                        fill="none">
+                                        <g clip-path="url(#clip0_335_2368)">
+                                            <path
+                                                d="M4.725 4.5L7.05 7.65L6.15 8.25L4.0875 4.9875L2.025 8.25L1.1625 7.65L3.4875 4.5L0 3.6L0.3375 2.625L3.75 3.825L3.525 0H4.65L4.4625 3.825L7.8375 2.625L8.1375 3.6375L4.725 4.5Z"
+                                                fill="#E60D0D" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_335_2368">
+                                                <rect width="9" height="9" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div>
+                                <input type="text" class="order-details__item-input required" placeholder="Минск">
+
+                                <div class="order-details__item-label">
+                                    Область
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9"
+                                        fill="none">
+                                        <g clip-path="url(#clip0_335_2368)">
+                                            <path
+                                                d="M4.725 4.5L7.05 7.65L6.15 8.25L4.0875 4.9875L2.025 8.25L1.1625 7.65L3.4875 4.5L0 3.6L0.3375 2.625L3.75 3.825L3.525 0H4.65L4.4625 3.825L7.8375 2.625L8.1375 3.6375L4.725 4.5Z"
+                                                fill="#E60D0D" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_335_2368">
+                                                <rect width="9" height="9" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div>
+                                <input type="text" class="order-details__item-input required" placeholder="Область">
+                            </div>
+
+                            <div class="order-details__item-col">
+                                <div class="order-details__item-label">
+                                    Фамилия
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9"
+                                        fill="none">
+                                        <g clip-path="url(#clip0_335_2368)">
+                                            <path
+                                                d="M4.725 4.5L7.05 7.65L6.15 8.25L4.0875 4.9875L2.025 8.25L1.1625 7.65L3.4875 4.5L0 3.6L0.3375 2.625L3.75 3.825L3.525 0H4.65L4.4625 3.825L7.8375 2.625L8.1375 3.6375L4.725 4.5Z"
+                                                fill="#E60D0D" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_335_2368">
+                                                <rect width="9" height="9" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div>
+                                <input type="text" class="order-details__item-input required"
+                                    placeholder="Ваша фамилия">
+
+                                <div class="order-details__item-label">
+                                    Паспорт
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9"
+                                        fill="none">
+                                        <g clip-path="url(#clip0_335_2368)">
+                                            <path
+                                                d="M4.725 4.5L7.05 7.65L6.15 8.25L4.0875 4.9875L2.025 8.25L1.1625 7.65L3.4875 4.5L0 3.6L0.3375 2.625L3.75 3.825L3.525 0H4.65L4.4625 3.825L7.8375 2.625L8.1375 3.6375L4.725 4.5Z"
+                                                fill="#E60D0D" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_335_2368">
+                                                <rect width="9" height="9" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div>
+                                <input type="text" class="order-details__item-input required" placeholder="Паспорт">
+
+                                <div class="order-details__item-label">
+                                    Улица
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9"
+                                        fill="none">
+                                        <g clip-path="url(#clip0_335_2368)">
+                                            <path
+                                                d="M4.725 4.5L7.05 7.65L6.15 8.25L4.0875 4.9875L2.025 8.25L1.1625 7.65L3.4875 4.5L0 3.6L0.3375 2.625L3.75 3.825L3.525 0H4.65L4.4625 3.825L7.8375 2.625L8.1375 3.6375L4.725 4.5Z"
+                                                fill="#E60D0D" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_335_2368">
+                                                <rect width="9" height="9" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div>
+                                <input type="text" class="order-details__item-input required" placeholder="Улица">
+
+                                <div class="order-details__item-inputs">
+                                    <input type="text" class="order-details__item-input" placeholder="Дом">
+                                    <input type="text" class="order-details__item-input" placeholder="Корпус">
+                                    <input type="text" class="order-details__item-input" placeholder="Квартира">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="order-details__item hidden step2">
+                        <div class="order-details__item-title">
+                            2.Где хотите получить заказ?
+                        </div>
+
+                        <div class="order-details__item-tabs">
+                            <div class="order-details__item-tab">
+                                <div class="order-details__item-tab-title">
+                                    Самовывоз
+                                </div>
+                                <div class="order-details__item-tab-text">
+                                    Бесплатно
+                                </div>
+                            </div>
+                            <div class="order-details__item-tab">
+                                <div class="order-details__item-tab-title">
+                                    Доставка по Беларуси
+                                </div>
+                                <div class="order-details__item-tab-text">
+                                    Бесплатно
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="order-details__item-tabs-box active">
+                            <div class="order-details__item-tabs-info">
+                                <span>Адрес склада:</span>Минская обл., Борисовский район, д. Углы, ул. Октябрьская, д.5
+                            </div>
+                        </div>
+
+                        <div class="order-details__item-tabs-box">
+                            <div class="order-details__item-col">
+                                <div class="order-details__item-label">
+                                    Населенный пункт
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9"
+                                        fill="none">
+                                        <g clip-path="url(#clip0_335_2368)">
+                                            <path
+                                                d="M4.725 4.5L7.05 7.65L6.15 8.25L4.0875 4.9875L2.025 8.25L1.1625 7.65L3.4875 4.5L0 3.6L0.3375 2.625L3.75 3.825L3.525 0H4.65L4.4625 3.825L7.8375 2.625L8.1375 3.6375L4.725 4.5Z"
+                                                fill="#E60D0D" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_335_2368">
+                                                <rect width="9" height="9" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div>
+                                <input type="text" class="order-details__item-input" placeholder="Населенный пункт">
+
+                                <div class="order-details__item-label">
+                                    Область
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9"
+                                        fill="none">
+                                        <g clip-path="url(#clip0_335_2368)">
+                                            <path
+                                                d="M4.725 4.5L7.05 7.65L6.15 8.25L4.0875 4.9875L2.025 8.25L1.1625 7.65L3.4875 4.5L0 3.6L0.3375 2.625L3.75 3.825L3.525 0H4.65L4.4625 3.825L7.8375 2.625L8.1375 3.6375L4.725 4.5Z"
+                                                fill="#E60D0D" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_335_2368">
+                                                <rect width="9" height="9" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div>
+                                <input type="text" class="order-details__item-input" placeholder="Область">
+                            </div>
+
+                            <div class="order-details__item-col">
+                                <div class="order-details__item-label">
+                                    Место доставки
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9"
+                                        fill="none">
+                                        <g clip-path="url(#clip0_335_2368)">
+                                            <path
+                                                d="M4.725 4.5L7.05 7.65L6.15 8.25L4.0875 4.9875L2.025 8.25L1.1625 7.65L3.4875 4.5L0 3.6L0.3375 2.625L3.75 3.825L3.525 0H4.65L4.4625 3.825L7.8375 2.625L8.1375 3.6375L4.725 4.5Z"
+                                                fill="#E60D0D" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_335_2368">
+                                                <rect width="9" height="9" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div>
+                                <textarea class="order-details__item-input order-details__item-textarea"
+                                    placeholder="Напишите дополнительную информацию о месте доставки"></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="order-details__item hidden step3">
+                        <div class="order-details__item-title">
+                            3.Выберите удобный способ оплаты
+                        </div>
+
+                        <div class="order-details__item-box">
+                            <div class="order-details__item-col" id="payment-checkboxes">
+                                <div class="order-details__item-radio">
+                                    <label>
+                                        <input type='radio' id="erip">
+                                        <span></span>
+                                        Одним платежом (Система “Расчет” (ЕРИП))
+                                    </label>
+                                </div>
+                                <div class="order-details__item-radio">
+                                    <label>
+                                        <input type='radio' id="installment">
+                                        <span></span>
+                                        В рассрочку
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="order-details__item-col" id="payment-text">
+                                <div class="order-details__item-text">
+                                    Вы можете оплатить заказ, самостоятельно оформив кредит Онлайн без бумажного
+                                    договора и скан-копий документов (требуется регистрация через МСИ). Для этого в
+                                    открывшейся ниже форме нужно выбрать период оплаты и подходящий кредитиз доступных
+                                    для товаров в Вашей корзине и завершить оформление заказа. Затем нажмите на кнопку
+                                    "ОФОРМИТЬ КРЕДИТ" и заполните банковскую анкету онлайн. Одобрение заявки занимает
+                                    несколько минут - Вам придет SMS от банка. Решение о выдаче кредита (рассрочки)
+                                    принимает банк.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="order-details__item-conditions" id="payment-conditions">
+                            <div class="order-details__item-title">
+                                Условия оформления
+                            </div>
+
+                            <div class="order-details__item-radios">
+                                <div class="order-details__item-radio">
+                                    <label>
+                                        <input type='radio' id="6month" checked>
+                                        <span></span>
+                                        6 месяцев
+                                    </label>
+                                </div>
+                                <div class="order-details__item-radio">
+                                    <label>
+                                        <input type='radio' id="12month">
+                                        <span></span>
+                                        12 месяцев
+                                    </label>
+                                </div>
+                                <div class="order-details__item-radio">
+                                    <label>
+                                        <input type='radio' id="36month">
+                                        <span></span>
+                                        36 месяцев
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="order-details__item-bluetext">
+                                Мы предоставляем собственную рассрочку сроком на 6 месяцев в случае, если банк Вам
+                                отказал в предоставлении рассрочек на 12 или 36 месяцев. Тогда, с большой долей
+                                вероятности, мы предоставляем рассрочку от производителя.
+                            </div>
+
+                            <div class="order-details__item-line"></div>
+
+                            <div class="order-details__item-payments active">
+                                <div class="order-details__item-payment">
+                                    <div class="order-details__item-payment-text">Среднемесячный платеж</div>
+                                    <div class="order-details__item-payment-num">300.00 BYN</div>
+                                </div>
+
+                                <div class="order-details__item-payment">
+                                    <div class="order-details__item-payment-text">Сумма переплаты</div>
+                                    <div class="order-details__item-payment-num">00.00 BYN</div>
+                                </div>
+
+                                <div class="order-details__item-payment">
+                                    <div class="order-details__item-payment-text">Количество платежей</div>
+                                    <div class="order-details__item-payment-num">6</div>
+                                </div>
+
+                                <div class="order-details__item-payment">
+                                    <div class="order-details__item-payment-text">Итого при оплате частями</div>
+                                    <div class="order-details__item-payment-num">3 600 BYN</div>
+                                </div>
+                            </div>
+
+                            <div class="order-details__item-payments">
+                                <div class="order-details__item-payment">
+                                    <div class="order-details__item-payment-text">Среднемесячный платеж</div>
+                                    <div class="order-details__item-payment-num">300.00 BYN</div>
+                                </div>
+
+                                <div class="order-details__item-payment">
+                                    <div class="order-details__item-payment-text">Сумма переплаты</div>
+                                    <div class="order-details__item-payment-num">00.00 BYN</div>
+                                </div>
+
+                                <div class="order-details__item-payment">
+                                    <div class="order-details__item-payment-text">Количество платежей</div>
+                                    <div class="order-details__item-payment-num">12</div>
+                                </div>
+
+                                <div class="order-details__item-payment">
+                                    <div class="order-details__item-payment-text">Итого при оплате частями</div>
+                                    <div class="order-details__item-payment-num">3 600 BYN</div>
+                                </div>
+                            </div>
+
+                            <div class="order-details__item-payments">
+                                <div class="order-details__item-payment">
+                                    <div class="order-details__item-payment-text">Среднемесячный платеж</div>
+                                    <div class="order-details__item-payment-num">30.00 BYN</div>
+                                </div>
+
+                                <div class="order-details__item-payment">
+                                    <div class="order-details__item-payment-text">Сумма переплаты</div>
+                                    <div class="order-details__item-payment-num">30.00 BYN</div>
+                                </div>
+
+                                <div class="order-details__item-payment">
+                                    <div class="order-details__item-payment-text">Количество платежей</div>
+                                    <div class="order-details__item-payment-num">36</div>
+                                </div>
+
+                                <div class="order-details__item-payment">
+                                    <div class="order-details__item-payment-text">Итого при оплате частями</div>
+                                    <div class="order-details__item-payment-num">3 600 BYN</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="order-details__item-topay active" id="to-pay">
+                            <div class="order-details__item-price">К оплате:</div>
+                            <div class="order-details__item-price">6 635 BYN</div>
+                        </div>
+                    </div>
+
+                    <div class="order-details__subtext">
+                        Оплата одним платежом
+                    </div>
+                    <button class="order-details__btn disabled">
+                        оформить заказ
+                    </button>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script>
+        const tabs = document.querySelectorAll('.order-details__item-tab');
+        const tabsBoxes = document.querySelectorAll('.order-details__item-tabs-box');
+        const erip = document.querySelector('#erip');
+        const installment = document.querySelector('#installment');
+        const paymentCheckboxes = document.querySelector('#payment-checkboxes');
+        const paymentText = document.querySelector('#payment-text');
+        const paymentConditions = document.querySelector('#payment-conditions');
+        const toPay = document.querySelector('#to-pay');
+        const radioButtons = document.querySelectorAll('.order-details__item-radios input');
+        const paymentConditionInfos = document.querySelectorAll('.order-details__item-payments');
+        const step1 = document.querySelector('.step1');
+        const step2 = document.querySelector('.step2');
+        const step3 = document.querySelector('.step3');
+        const step1Num = document.querySelector('.steps__box-num.num1');
+        const step2Num = document.querySelector('.steps__box-num.num2');
+        const step3Num = document.querySelector('.steps__box-num.num3');
+        const step4Num = document.querySelector('.steps__box-num.num4');
+        const step1Inputs = document.querySelectorAll('.order-details__item.step1 .order-details__item-input.required');
+        const step2Inputs = document.querySelectorAll('.order-details__item.step2 .order-details__item-input');
+        const orderBtn = document.querySelector('.order-details__btn');
+
+
+        const removeActiveClass = (elements) => {
+            elements.forEach(element => element.classList.remove('active'));
+        }
+
+        tabs.forEach((tab, index) => {
+            tab.addEventListener('click', () => {
+                removeActiveClass(tabs);
+                removeActiveClass(tabsBoxes);
+
+                tab.classList.add('active');
+                tabsBoxes[index].classList.add('active');
+
+                if (index === 0) {
+                    step3.classList.remove('hidden');
+                    step3Num.classList.add('active');
+                } else {
+                    step3.classList.add('hidden');
+                    step3Num.classList.remove('active');
+                    step2Inputs.forEach(input => input.value = '');
+                }
+            });
+        });
+
+        paymentCheckboxes.addEventListener('change', (e) => {
+            erip.checked = false
+            installment.checked = false
+            paymentText.classList.remove('active');
+            paymentConditions.classList.remove('active');
+
+            step4Num.classList.add('active');
+            orderBtn.classList.remove('disabled');
+
+            e.target.checked = true;
+
+            if (e.target === installment) {
+                paymentText.classList.add('active');
+                paymentConditions.classList.add('active');
+                toPay.classList.remove('active')
+            }
+
+            if (e.target === erip) {
+                toPay.classList.add('active');
+            }
+        })
+
+        const removeChecked = (elements) => {
+            elements.forEach(element => element.checked = false);
+        }
+
+        radioButtons.forEach((btn, i) => {
+            btn.addEventListener('change', () => {
+                removeChecked(radioButtons);
+                removeActiveClass(paymentConditionInfos);
+
+                btn.checked = true;
+                paymentConditionInfos[i].classList.add('active');
+            })
+        }); 
+    
+        const debounce = (callback, timeout) => {
+            let timer;
+
+            return function () {
+                clearTimeout(timer);
+                timer = setTimeout(callback, timeout);
+            }
+        }
+
+        const checkEmptyInputs = (inputs, step, stepNum) => {
+            let counter = 0;
+
+            inputs.forEach(input => {
+                if (input.value.trim() === '') {
+                    input.style.borderColor = 'red';
+                } else {
+                    input.style.borderColor = '#cfd8e0';
+                    counter++;
+                }
+            });
+
+            if (counter === inputs.length) {
+                step.classList.remove('hidden');
+                stepNum.classList.add('active');
+            } else {
+                step.classList.add('hidden');
+                stepNum.classList.remove('active');
+            }
+
+            counter = 0;
+        }
+
+        const checkStep1Inputs = () => checkEmptyInputs(step1Inputs, step2, step2Num);
+
+        const debouncedcheckStep1Inputs = debounce(checkStep1Inputs, 500);
+
+        step1.addEventListener('input', debouncedcheckStep1Inputs);
+
+        const checkStep2Inputs = () => checkEmptyInputs(step2Inputs, step3, step3Num);
+
+        const debouncedcheckStep2Inputs = debounce(checkStep2Inputs, 500);
+
+        step2.addEventListener('input', debouncedcheckStep2Inputs);
+    </script>
+</body>
+
+</html>
