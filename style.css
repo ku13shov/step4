@@ -1496,6 +1496,10 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  margin-bottom: 24px;
+}
+.order-details__item-bluetext.special {
+  font-size: 16px;
 }
 .order-details__item-bluetext span {
   font-weight: 700;
@@ -1507,6 +1511,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   gap: 24px;
+  margin-bottom: 24px;
 }
 .order-details__item-col {
   width: 50%;

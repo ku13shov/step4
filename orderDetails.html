@@ -251,7 +251,12 @@
                         <div class="order-details__item-tabs-box active">
                             <div class="order-details__item-tabs-info">
                                 <span>Адрес склада:</span>Минская обл., Борисовский район, д. Углы, ул. Октябрьская, д.5
+
+                                <div class="order-details__item-tabs-info">
+                                    <span>Телефон:</span>+375 29 222 22 22
+                                </div>
                             </div>
+                            
                         </div>
 
                         <div class="order-details__item-tabs-box">
@@ -272,23 +277,10 @@
                                         </defs>
                                     </svg>
                                 </div>
-                                <input type="text" class="order-details__item-input" placeholder="Населенный пункт">
+                                <input type="text" class="order-details__item-input required" placeholder="Населенный пункт">
 
                                 <div class="order-details__item-label">
                                     Область
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9"
-                                        fill="none">
-                                        <g clip-path="url(#clip0_335_2368)">
-                                            <path
-                                                d="M4.725 4.5L7.05 7.65L6.15 8.25L4.0875 4.9875L2.025 8.25L1.1625 7.65L3.4875 4.5L0 3.6L0.3375 2.625L3.75 3.825L3.525 0H4.65L4.4625 3.825L7.8375 2.625L8.1375 3.6375L4.725 4.5Z"
-                                                fill="#E60D0D" />
-                                        </g>
-                                        <defs>
-                                            <clipPath id="clip0_335_2368">
-                                                <rect width="9" height="9" fill="white" />
-                                            </clipPath>
-                                        </defs>
-                                    </svg>
                                 </div>
                                 <input type="text" class="order-details__item-input" placeholder="Область">
                             </div>
@@ -310,7 +302,7 @@
                                         </defs>
                                     </svg>
                                 </div>
-                                <textarea class="order-details__item-input order-details__item-textarea"
+                                <textarea class="order-details__item-input required order-details__item-textarea"
                                     placeholder="Напишите дополнительную информацию о месте доставки"></textarea>
                             </div>
                         </div>
@@ -327,7 +319,7 @@
                                     <label>
                                         <input type='radio' id="erip">
                                         <span></span>
-                                        Одним платежом (Система “Расчет” (ЕРИП))
+                                        Одним платежом
                                     </label>
                                 </div>
                                 <div class="order-details__item-radio">
@@ -341,13 +333,6 @@
 
                             <div class="order-details__item-col" id="payment-text">
                                 <div class="order-details__item-text">
-                                    Вы можете оплатить заказ, самостоятельно оформив кредит Онлайн без бумажного
-                                    договора и скан-копий документов (требуется регистрация через МСИ). Для этого в
-                                    открывшейся ниже форме нужно выбрать период оплаты и подходящий кредитиз доступных
-                                    для товаров в Вашей корзине и завершить оформление заказа. Затем нажмите на кнопку
-                                    "ОФОРМИТЬ КРЕДИТ" и заполните банковскую анкету онлайн. Одобрение заявки занимает
-                                    несколько минут - Вам придет SMS от банка. Решение о выдаче кредита (рассрочки)
-                                    принимает банк.
                                 </div>
                             </div>
                         </div>
@@ -376,14 +361,14 @@
                                     <label>
                                         <input type='radio' id="36month">
                                         <span></span>
-                                        36 месяцев
+                                        24 месяца
                                     </label>
                                 </div>
                             </div>
 
-                            <div class="order-details__item-bluetext">
+                            <div class="order-details__item-bluetext special">
                                 Мы предоставляем собственную рассрочку сроком на 6 месяцев в случае, если банк Вам
-                                отказал в предоставлении рассрочек на 12 или 36 месяцев. Тогда, с большой долей
+                                отказал в предоставлении рассрочек на 12 или 24 месяца. Тогда, с большой долей
                                 вероятности, мы предоставляем рассрочку от производителя.
                             </div>
 
@@ -446,7 +431,7 @@
 
                                 <div class="order-details__item-payment">
                                     <div class="order-details__item-payment-text">Количество платежей</div>
-                                    <div class="order-details__item-payment-num">36</div>
+                                    <div class="order-details__item-payment-num">24</div>
                                 </div>
 
                                 <div class="order-details__item-payment">
@@ -462,9 +447,6 @@
                         </div>
                     </div>
 
-                    <div class="order-details__subtext">
-                        Оплата одним платежом
-                    </div>
                     <button class="order-details__btn disabled">
                         оформить заказ
                     </button>
@@ -492,7 +474,7 @@
         const step3Num = document.querySelector('.steps__box-num.num3');
         const step4Num = document.querySelector('.steps__box-num.num4');
         const step1Inputs = document.querySelectorAll('.order-details__item.step1 .order-details__item-input.required');
-        const step2Inputs = document.querySelectorAll('.order-details__item.step2 .order-details__item-input');
+        const step2Inputs = document.querySelectorAll('.order-details__item.step2 .order-details__item-input.required');
         const orderBtn = document.querySelector('.order-details__btn');
 
 
@@ -525,7 +507,6 @@
             paymentText.classList.remove('active');
             paymentConditions.classList.remove('active');
 
-            step4Num.classList.add('active');
             orderBtn.classList.remove('disabled');
 
             e.target.checked = true;
